@@ -11,7 +11,7 @@ The total collection of to be implemented patterns are the following:
 
 + **Factory**
 + **Command**
-+ Memento
++ **Memento**
 + Observer
 + State
 + Strategy

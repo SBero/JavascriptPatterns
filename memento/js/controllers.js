@@ -1,12 +1,17 @@
 (function(){
 	'use strict';
 
-
+	/*
+	User objects for the memento
+	 */
 	var User = function(name, age){
 		this.name = name;
 		this.age = age;
 	}
 
+	/*
+	Adding the memento option to all User objects
+	 */
 	User.prototype = {
 		memento: null,
 
@@ -26,6 +31,9 @@
 		}
 	}
 
+	/*
+	Standard Angular
+	 */
 	var controllerId = "mainCtrl";
 
 	angular.module('patterns.controllers').controller(controllerId, ['$scope', mainCtrl]);
@@ -48,16 +56,16 @@
 			vm.users.push(jane);
 			vm.users.push(jack);
 
+			// Set the intial, default state
 			john.hydrate();
 			jane.hydrate();
 			jack.hydrate();
-
-
 
 		}
 
 		_init();
 
+		// Helper functions
 		vm.randomAge = function(user){
 			var randomAge = Math.floor((Math.random() * 50) + 20);
 

@@ -33,10 +33,14 @@
 				A user can change the saved state for the profile at any given time, and restore it back to that state. This pattern can be applied to a variety of scenarios including having the 'Reset Defaults' for application settings, user profile settings, or item settings.
 			</p>
 
+			<p>
+				This can be further extended, by even adding a default state property for the object prototype, and supplying a setDefault boolean to the hydrate function, thus storing a default case for the object, and allowing the user to completely restore to this state, while allowing a snapshot ability still.
+			</p>
+
 			<div class="col-md-4" ng-repeat="user in vm.users">
 				<div class="well">
-					<span class="fa fa-user fa-2x"></span>
-					<dl class="dl-horizontal">
+					<span class="fa fa-user fa-2x pull-left"></span>
+					<dl class="dl-horizontal pull-left">
 						<dt>Name:</dt> 
 						<dd>{{user.name}}</dd>
 						<dt>Age:</dt> 

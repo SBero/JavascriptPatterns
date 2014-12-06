@@ -13,7 +13,7 @@ The total collection of to be implemented patterns are the following:
 + **Command**
 + **Memento**
 + **State**
-+ Strategy
++ **Strategy**
 + Visitor
 + Namespace
 + Chaining

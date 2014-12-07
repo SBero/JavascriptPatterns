@@ -16,7 +16,7 @@ The total collection of to be implemented patterns are the following:
 + **Strategy**
 + **Visitor**
 + **Chaining**
++ **Lazy Load**
 + Mixin
-+ Lazy Load
 
 At some point, all patterns will be tested with Karma, Jasmine and Protractor.

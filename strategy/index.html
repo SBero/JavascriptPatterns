@@ -30,7 +30,7 @@
 			</p>
 
 			<p>
-			The pattern itself gives us the flexibility to add additional strategies over time, as needed. The results or the best strategy can then be presented to the user.
+			The pattern itself gives us the flexibility to add additional strategies over time, as needed. The results and/or the best strategy can then be presented to the user.
 			</p>
 
 			<form class="form-inline">
@@ -45,7 +45,7 @@
 				</div>
 
 				<div class="form-group">
-					<input type="number" class="form-control" ng-model="vm.distance" placeholder="Dinstance (Miles)">
+					<input type="number" class="form-control" ng-model="vm.distance" placeholder="Distance (Miles)">
 				</div>
 
 
@@ -53,7 +53,22 @@
 
 			<hr/>
 
+			<h3>Strategy Results</h3>
 
+			<table class="table table-horizontal">
+				<tr ng-repeat="strategy in vm.strategyResults">
+					<th class="col-md-2">{{strategy.company}}</th>
+					<td>{{strategy.price}}</td>
+				</tr>
+			</table>
+			
+			<table class="table table-horizontal" ng-show="vm.bestStrategy">
+				<tr>
+					<th class="col-md-2">Best Strategy</th>
+					<td>{{vm.bestStrategy.company}}</td>
+				</tr>
+			</table>
+			
 		</div>
 	</body>
 </html>

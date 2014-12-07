@@ -15,8 +15,7 @@ The total collection of to be implemented patterns are the following:
 + **State**
 + **Strategy**
 + **Visitor**
-+ Namespace
-+ Chaining
++ **Chaining**
 + Mixin
 + Lazy Load
 

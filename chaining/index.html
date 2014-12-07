@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="patterns">
+	<head>
+		<title>Project Template</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+		
+
+		<script src="js/app.js"></script>
+
+		<script src="js/services.js"></script>
+		<script src="js/directives.js"></script>
+		<script src="js/controllers.js"></script>
+		
+	</head>
+	<body class="container">
+		<div ng-controller="mainCtrl as vm">
+			<h1>{{vm.title}}</h1>
+			<p>
+				The chaining pattern is an extremely useful way to perform continuous method calls on an object in JavaScript.
+			</p>
+
+			<p>
+				This pattern is widely used in many different libraries and frameworks for JavaScript.
+			</p>
+
+			<button class="btn btn-default" ng-click="vm.process()">
+				<span class="fa fa-gears"></span> Process
+			</button>
+			<br/>
+			<br/>
+			<p>Starting with a value of <b>5</b>, Chained methods: <b>add(</b>2<b>)</b>, <b>multiply(</b>5<b>)</b>, <b>subtract(</b>7<b>)</b> -> Result should be <b>28</b></p>
+
+			<hr/>
+
+			<h3>Result</h3>
+			<p>{{vm.result}}</p>
+		</div>
+	</body>
+</html>

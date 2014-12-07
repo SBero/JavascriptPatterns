@@ -14,7 +14,7 @@ The total collection of to be implemented patterns are the following:
 + **Memento**
 + **State**
 + **Strategy**
-+ Visitor
++ **Visitor**
 + Namespace
 + Chaining
 + Mixin

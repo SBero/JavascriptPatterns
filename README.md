@@ -20,4 +20,4 @@ The total collection of to be implemented patterns are the following:
 + Mixin
 + Lazy Load
 
-At some point, all tests will be tested with Karma, Jasmine and Protractor.
+At some point, all patterns will be tested with Karma, Jasmine and Protractor.
